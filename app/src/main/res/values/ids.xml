@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="img_btn_chat_more" type="id" />
+    <item name="img_btn_voice_call" type="id" />
+    <item name="img_btn_video_call" type="id" />
+</resources>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/whatsapp_chat_background"
+    tools:context=".Chat_Activity">
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@color/teal_theme">
+
+        <ImageButton
+            android:id="@+id/img_btn_back"
+            android:layout_width="?actionBarSize"
+            android:layout_height="?actionBarSize"
+            android:src="@drawable/back_activity_btn"
+            android:background="@android:color/transparent"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_chat"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/whatsapp_avatar"/>
+
+        <TextView
+            android:id="@+id/tvChatName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:lines="1"
+            android:ems="3"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="8dp"
+            android:textSize="20sp"
+            android:fontFamily="@font/semi_bold"
+            android:text="Abhishek More"/>
+
+        <ImageButton
+            android:id="@+id/img_btn_video_call"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/teal_theme"
+            android:layout_marginHorizontal="8dp"
+            android:src="@drawable/chat_video_call_logo"/>
+        <ImageButton
+            android:id="@+id/img_btn_voice_call"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/teal_theme"
+            android:layout_marginHorizontal="8dp"
+            android:src="@drawable/chat_voice_call_logo"/>
+        <ImageButton
+            android:id="@+id/img_btn_chat_more"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/teal_theme"
+            android:layout_marginHorizontal="8dp"
+            android:src="@drawable/vertical_three_dot"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_chat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll1"
+        android:background="@drawable/whatsapp_chat_background"
+        android:layout_above="@+id/chat_pannel">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/chat_pannel"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:layout_marginVertical="5dp"
+        android:layout_gravity="bottom"
+        android:paddingHorizontal="5dp"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/chat_pannel_background"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/btn_emoji"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@drawable/smile_emoji"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="10dp"/>
+            <EditText
+                android:id="@+id/et_chat_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:windowSoftInputMode="stateVisible|adjustResize"
+                android:background="@android:color/transparent"
+                android:textColorHint="@color/sub_text_color"
+                android:textSize="20sp"
+                android:focusedByDefault="false"
+                android:hint="Message"
+                tools:ignore="NestedWeights">
+                <requestFocus/>
+            </EditText>
+            <ImageButton
+                android:id="@+id/ib_chat_camera"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:background="@drawable/chat_pannel_background"
+                android:layout_marginHorizontal="5dp"
+                android:src="@drawable/chat_camera_img"/>
+        </LinearLayout>
+        <ImageButton
+            android:id="@+id/ib_chat_mic"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/mic_logo"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/mice_circle_background"/>
+    </LinearLayout>
+</RelativeLayout>

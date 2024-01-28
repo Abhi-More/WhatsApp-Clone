@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:paddingHorizontal="10dp"
+    android:paddingVertical="10dp"
+    android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/call_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/whatsapp_avatar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_call_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/abhishek"
+            android:fontFamily="@font/semi_bold"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="15sp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/call_status_img"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/call_arrow_outward_missed"/>
+            <TextView
+                android:id="@+id/tv_call_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18 February, 9:55 am"
+                android:layout_marginLeft="5dp"
+                android:textColor="#B00C3137"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/call_type_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/call_video_logo"/>
+    </LinearLayout>
+
+</LinearLayout>

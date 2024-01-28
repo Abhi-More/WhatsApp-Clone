@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:paddingHorizontal="10dp"
+    android:paddingVertical="5dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:background="@drawable/status_circle">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/status_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/whatsapp_avatar"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_status_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/abhishek"
+            android:fontFamily="@font/semi_bold"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="15sp"/>
+        <TextView
+            android:id="@+id/time_ago"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="37 minutes ago"
+            android:textColor="#B00C3137"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+</LinearLayout>

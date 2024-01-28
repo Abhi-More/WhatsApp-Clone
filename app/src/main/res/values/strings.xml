@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">WhatsApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="abhishek">Abhishek More</string>
+    <string name="create_call_link">Create call link</string>
+    <string name="share_a_link_for_your_whatsapp_call">Share a link for your WhatsApp call</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="feature">This is a simple chatting application cloned from the popular WhatsApp Messenger. It makes use of Firebase. It has the following functionality:</string>
+    <string name="feature_list"><ol><li>Messaging\n</li><li>Authentication(login, logout)\n</li><li>Delete message\n</li><li>Upload profile image\n</li><li>Update profile(image, username, about)\n</li><li>Show user information</li>
+    </ol></string>
+</resources>

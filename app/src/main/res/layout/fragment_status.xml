@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".StatusFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:gravity="center">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/status_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/whatsapp_avatar" />
+
+                    <ImageButton
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/baseline_add_24"
+                        android:background="@drawable/add_status_button_background"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"/>
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="My Status"
+                        android:fontFamily="@font/semi_bold"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"/>
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text=""-->
+<!--                        android:textColor="#B00C3137"-->
+<!--                        android:textSize="14sp"/>-->
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll1"
+                android:text="Recent Updated"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:layout_marginHorizontal="10dp"
+                android:textColor="#B00C3137"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewStatus"
+                android:layout_width="match_parent"
+                android:layout_below="@id/tv1"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <!-- TODO: Update blank fragment layout -->
+</RelativeLayout>
